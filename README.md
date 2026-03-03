@@ -15,13 +15,13 @@ info.json
 
 ```
 {
-	"Name": "ThemeName",
-	"Version": "1.0",
-	"UpdatedDate": "2024/08/23",
-	"Description": "A description of my theme,
-	"URL": "https://example.org",
-	"Author": "Author Name",
-	"Tags": ["Contributor", "Example"]
+  "Name": "ThemeName",
+  "Version": "1.0",
+  "UpdatedDate": "2024/08/23",
+  "Description": "A description of my theme,,
+  "URL": "https://example.org",
+  "Author": "Author Name",
+  "Tags": [ "Contributor", "Example" ]
 }
 ```
 
@@ -42,4 +42,4 @@ info.json
 preview.png screenshots
 ===
 
-These screenshots are shown within the store page in AMP.  See the [Coffee Example](https://github.com/CubeCoders/AMPThemes/blob/main/Coffee/preview.png) for how they should look - they are obtained by previewing a theme within AMPs store and reducing the size of the preview page, and then cropping to the desired elements only.
+These screenshots are shown within the store page in AMP. This is a 420px x 350px preview of the theme. See the [Coffee Example](https://github.com/CubeCoders/AMPThemes/blob/main/Coffee/preview.png) for how they should look - they are obtained by previewing a theme within AMPs store and reducing the size of the preview page, and then cropping to the desired elements only.
