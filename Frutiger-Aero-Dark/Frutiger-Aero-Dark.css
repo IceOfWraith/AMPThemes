@@ -101,7 +101,7 @@
   text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
 }
 body {
-  background-image: url(/Images/Frutiger.webp);
+  background-image: url(/Themes/AMPThemes/Frutiger-Aero-Dark/FrutigerDark.webp);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -247,7 +247,4 @@ input[type=button].slimButton {
 }
 .scheduleTriggerTask {
   border-bottom: 1px solid white;
-}
-body {
-  background-image: url(/Images/FrutigerDark.webp);
 }

@@ -10,7 +10,7 @@
 }
 */
 body {
-  background-image: url(../Images/AuraBlur.webp);
+  background-image: url(/Themes/AMPThemes/Aura/AuraBlur.webp);
   background-size: auto;
   background-position: bottom center;
   backdrop-filter: brightness(0.5) saturate(1.5);

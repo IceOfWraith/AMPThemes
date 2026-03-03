@@ -10,47 +10,47 @@
  *
  */
 
-@thHilite:       #735969;
-@thBgMain:       #584452;
-@thBgMain80:     #58444ecc;
-@thBgMain25:     #58444e40;
-@thBg2nd:        #463741;
-@thBg3rd:        #31262c;
-@thBg4th80:      #110d10cc;
-@thBg5th90:      #0c090be6;
+@thHilite: #735969;
+@thBgMain: #584452;
+@thBgMain80: #58444ecc;
+@thBgMain25: #58444e40;
+@thBg2nd: #463741;
+@thBg3rd: #31262c;
+@thBg4th80: #110d10cc;
+@thBg5th90: #0c090be6;
 
-@thLite:         #c45094;
-@thLite80:       #c4508ecc;
-@thLite60:       #c4509699;
-@noticeTrans:    #ff00621a;
+@thLite: #c45094;
+@thLite80: #c4508ecc;
+@thLite60: #c4509699;
+@noticeTrans: #ff00621a;
 
-@actionDark:     #652241;
-@actionMed:      #794961;
-@actionLite:     #a76d8b;
-@actionRed:      hsl(0, 15%, 38%);
-@actionRedLite:  hsl(0, 15%, 54%);
+@actionDark: #652241;
+@actionMed: #794961;
+@actionLite: #a76d8b;
+@actionRed: hsl(0, 15%, 38%);
+@actionRedLite: hsl(0, 15%, 54%);
 
-@greyLight:      #888;
-@colorActive:    #222;
+@greyLight: #888;
+@colorActive: #222;
 
-@black80pct:     rgba(0, 0, 0, 0.8);
-@black70pct:     rgba(0, 0, 0, 0.7);
-@black50pct:     rgba(0, 0, 0, 0.5);
-@black40pct:     rgba(0, 0, 0, 0.4);
-@black30pct:     rgba(0, 0, 0, 0.3);
-@black20pct:     rgba(0, 0, 0, 0.2);
-@black15pct:     rgba(0, 0, 0, 0.15);
+@black80pct: rgba(0, 0, 0, 0.8);
+@black70pct: rgba(0, 0, 0, 0.7);
+@black50pct: rgba(0, 0, 0, 0.5);
+@black40pct: rgba(0, 0, 0, 0.4);
+@black30pct: rgba(0, 0, 0, 0.3);
+@black20pct: rgba(0, 0, 0, 0.2);
+@black15pct: rgba(0, 0, 0, 0.15);
 
-@white30pct:     rgba(255, 255, 255, 0.3);
-@white40pct:     rgba(255, 255, 255, 0.4);
-@white50pct:     rgba(255, 255, 255, 0.5);
-@white60pct:     rgba(255, 255, 255, 0.6);
-@white70pct:     rgba(255, 255, 255, 0.7);
-@white80pct:     rgba(255, 255, 255, 0.8);
+@white30pct: rgba(255, 255, 255, 0.3);
+@white40pct: rgba(255, 255, 255, 0.4);
+@white50pct: rgba(255, 255, 255, 0.5);
+@white60pct: rgba(255, 255, 255, 0.6);
+@white70pct: rgba(255, 255, 255, 0.7);
+@white80pct: rgba(255, 255, 255, 0.8);
 
-@bgRedV2:        rgba(144, 36, 144, 0.95);
-@bgGreenV2:      rgba(201, 0, 118, 0.95); // bgPink is the new bgGreen!
-@bgGradient:     linear-gradient(165deg, @actionDark 0%, @bgRedV2 45%, @thLite80 100%);
+@bgRedV2: rgba(144, 36, 144, 0.95);
+@bgGreenV2: rgba(201, 0, 118, 0.95); // bgPink is the new bgGreen!
+@bgGradient: linear-gradient(165deg, @actionDark 0%, @bgRedV2 45%, @thLite80 100%);
 
 @ServerEntryImageHue: 215deg;
 
@@ -69,6 +69,7 @@ body, .bodyTab, .tabHeaderContainer {
             background-color: transparent;
             background: @bgGradient;
         }
+
         &.active, &:active {
             background-color: @thHilite;
             border-bottom: 2px solid @thHilite !important; // yeah I know... base template does this :(
@@ -102,7 +103,7 @@ body, .bodyTab, .tabHeaderContainer {
 
 body {
     background-color: black;
-    background-image: url('./background-body.webp');
+    background-image: url('/Themes/AMPThemes/Fantasy/background-body.webp');
     backdrop-filter: saturate(1.2) brightness(0.7);
 }
 
@@ -129,11 +130,13 @@ body {
 #loginContainer, .sideItemList, #sideMenuContainer {
     background: none;
     background-color: @black30pct;
+
     > #userInfo {
         background-color: @black30pct;
         color: @white60pct;
         border-radius: 23px 0 0 23px;
     }
+
     > #loginLogo img {
         background-color: @black20pct;
         padding: 20px;
@@ -161,6 +164,7 @@ body {
 .subMenuWell {
     background: none;
     background-color: @black20pct;
+
     .menuTitle {
         color: @thLite;
     }
@@ -182,6 +186,7 @@ body {
                 .ServerGroupName {
                     padding-top: 10px;
                 }
+
                 .SystemInfo {
                     right: 8px;
                     color: @white70pct;
@@ -198,6 +203,7 @@ body {
                                 filter: sepia(1) saturate(1.5) hue-rotate(@ServerEntryImageHue) brightness(0.2) blur(16px);
                             }
                         }
+
                         &.Offline {
                             filter: sepia(1) saturate(1.5) hue-rotate(@ServerEntryImageHue) brightness(0.2);
                         }
@@ -206,6 +212,7 @@ body {
                     &.NewServerEntry {
                         background-color: @thBg2nd;
                         border-left: 1px solid @black30pct;
+
                         span {
                             color: @thLite;
                         }
@@ -214,15 +221,19 @@ body {
                     &.statusOffline {
                         border-left-color: @black70pct;
                     }
+
                     &.statusBusy {
                         border-left-color: @actionMed;
                     }
+
                     &.statusNotice {
                         border-left-color: @actionDark;
                     }
+
                     &.statusRunning {
                         border-left-color: @bgGreenV2;
                     }
+
                     &.statusFail {
                         border-left-color: @bgRedV2;
                     }
@@ -233,11 +244,13 @@ body {
                                 background-color: @actionMed;
                                 border-color: @actionMed;
                             }
+
                             &.bgGreen {
                                 background-color: @bgGreenV2;
                                 border-color: @bgGreenV2;
                                 font-weight: bold;
                             }
+
                             &.bgRed {
                                 background-color: @bgRedV2;
                                 border-color: @bgRedV2;
@@ -247,6 +260,7 @@ body {
                 }
             }
         }
+
         .ServerGroupHeader {
             text-shadow: 2px 2px 6px @black30pct;
         }
@@ -260,30 +274,37 @@ button, .button {
     &:hover {
         background-color: @black50pct;
     }
+
     &#loginButton {
         background-color: @actionDark;
         border: 1px solid @actionDark;
+
         &:hover {
             background-color: @thBg3rd;
             border-color: @thBg3rd;
         }
     }
+
     &.disabled {
         border: 1px solid @black15pct;
         background-color: @black15pct;
+
         &:hover {
             background-color: @black40pct;
             border: 1px solid @black40pct;
         }
     }
+
     &.bgRed {
         background-color: @bgRedV2;
         border: 1px solid @bgRedV2;
     }
+
     &.bgGreen {
         background-color: @bgGreenV2;
         border: 1px solid @bgGreenV2;
     }
+
     &.bgRed, &.bgGreen {
         &:hover:not(.slideIcon) {
             background-color: transparent;
@@ -291,6 +312,7 @@ button, .button {
             border: 1px solid @black50pct;
         }
     }
+
     &.slideIcon {
         color: @white80pct;
         font-size: 1.1em;
@@ -307,13 +329,14 @@ button, .button {
 .contextMenu {
     .flexButtonGroup {
         .buttonListSeparator {
-           border-bottom: 1px solid @thLite80;
-       }
-   }
+            border-bottom: 1px solid @thLite80;
+        }
+    }
 }
 
 .well.info {
     border: 1px solid @thLite80;
+
     .mat-icon {
         color: @thLite80;
     }
@@ -321,9 +344,11 @@ button, .button {
 
 a {
     color: @white80pct;
+
     &:hover {
         color: @bgGreenV2;
     }
+
     &:visited {
         color: @thLite;
     }
@@ -334,10 +359,12 @@ a {
 .iconButton {
     background-color: @thBg3rd;
     border-color: @thBg3rd;
+
     &.toggled {
         background-color: @actionMed;
         border-color: @actionMed;
     }
+
     &:hover {
         background-color: @thBg2nd;
         border-color: @thBg2nd;
@@ -405,6 +432,7 @@ a {
 .bgPurple, .bgPink, .bgInfo, .bgBlue {
     background-color: @actionMed;
     border: 1px solid @actionMed;
+
     &:hover {
         background-color: @thBg2nd;
         border: 1px solid @thBg2nd;
@@ -415,6 +443,7 @@ a {
     background-color: @thLite;
     border: 1px solid @thLite;
     color: @black80pct;
+
     &:hover {
         background-color: @thHilite;
         border: 1px solid @thHilite;
@@ -433,24 +462,29 @@ a {
 #sideMenu a {
     font-size: 100%;
     color: @white50pct;
+
     &:hover, &:active {
         color: @white80pct;
         background-color: @black70pct;
     }
+
     &.selected {
         color: @bgGreenV2;
         background-color: @black50pct;
     }
+
     &.hasNotice {
         background-color: @noticeTrans;
+
         &:hover {
             color: @white50pct;
         }
     }
+
     &.info {
         .warn, .subtitle {
             color: @thLite;
-        }        
+        }
     }
 }
 
@@ -458,16 +492,19 @@ input[type=text], input[type=password], input[type=url], input[type=number], inp
     background-color: @thHilite;
     color: @black80pct;
     border-bottom: 1px solid @black80pct;
+
     &::placeholder {
         color: @black40pct;
     }
+
     &:focus-visible {
         outline: @black50pct solid 1px;
     }
 }
 
 input.searchBox {
-    background-color:transparent;
+    background-color: transparent;
+
     ::placeholder {
         color: @white40pct;
     }
@@ -476,6 +513,7 @@ input.searchBox {
 input[type=checkbox] + span,
 input[type=checkbox].redOff + span {
     background-color: @actionMed;
+
     &::after {
         background-color: @actionLite;
     }
@@ -484,6 +522,7 @@ input[type=checkbox].redOff + span {
 // indeterminate (neither on or off) needs to override "redOff" class -- which probably shouldn't be set
 input[type=checkbox][indeterminate] + span {
     background-color: @actionRed;
+
     &::after {
         background-color: @actionRedLite;
     }
@@ -492,6 +531,7 @@ input[type=checkbox][indeterminate] + span {
 input[type=checkbox]:checked + span,
 input[type=checkbox][indeterminate]:checked + span {
     background-color: @actionDark;
+
     &::after {
         background-color: @thLite;
     }
@@ -508,21 +548,23 @@ input[type=checkbox][indeterminate]:checked + span {
     }
 }
 
-#searchResults .searchResult {
-    border-bottom: 1px solid gray;
-    padding: 8px;
-    font-size: smaller;
-}
+    #searchResults .searchResult {
+        border-bottom: 1px solid gray;
+        padding: 8px;
+        font-size: smaller;
+    }
 
 .settingsGroup .groupBody {
     .settingContainer {
         background-color: @thBg2nd;
         border-color: @thBg2nd;
+
         .settingWarning {
             color: @thLite;
             margin-top: -32px;
         }
     }
+
     .settingInfo {
         color: @actionLite;
         background-color: @black80pct;
@@ -531,19 +573,24 @@ input[type=checkbox][indeterminate]:checked + span {
         width: fit-content;
         float: right;
     }
+
     .settingLabel {
         .settingDescription {
             color: @white50pct;
+
             a {
                 color: @thLite;
+
                 &:hover {
                     color: @white80pct;
                 }
             }
         }
+
         span.inputFieldSuffix {
             color: @black50pct
         }
+
         textarea {
             max-width: 100%;
         }
@@ -554,6 +601,7 @@ input[type=checkbox][indeterminate]:checked + span {
     .treeContainer {
         margin-bottom: 5px;
     }
+
     hr {
         color: @black30pct;
     }
@@ -569,15 +617,19 @@ thead {
             &:nth-child(odd) {
                 background-color: @black30pct;
             }
+
             &:hover {
                 background-color: @actionMed;
             }
+
             &:active, &.selected {
                 background-color: @actionDark;
             }
+
             td:first-child {
                 padding-left: 8px;
             }
+
             td:last-child {
                 padding-right: 8px;
             }
@@ -598,12 +650,14 @@ thead {
             &.bgInfo {
                 background-color: @greyLight;
                 border-color: @greyLight;
+
                 &:hover {
                     background-color: @colorActive;
                     border-color: @colorActive;
                 }
             }
         }
+
         &.required {
             background-color: @thBg2nd;
         }
@@ -623,6 +677,7 @@ thead {
         font-weight: bold;
         color: @white60pct;
     }
+
     h4 {
         color: @white50pct
     }
@@ -653,7 +708,7 @@ thead {
     }
 }
 
-.splitViewInfo.splitViewInfo { 
+.splitViewInfo.splitViewInfo {
     background-color: @thBgMain;
 }
 
@@ -663,10 +718,11 @@ thead {
         border-right: 4px solid @bgGreenV2;
         color: @bgGreenV2;
     }
+
     &:hover {
         background-color: @black50pct;
         color: @white50pct;
-    }    
+    }
 }
 
 #fileManagerHeader .fmPathSegment {
@@ -677,36 +733,42 @@ thead {
     }
 }
 
-#fileManagerHeader .fmPathSegment:nth-child(even) {
-    background-color: @thBg3rd;
-    &::after {
-        border-left: 10px solid @thBg3rd;
-    }
-}
+    #fileManagerHeader .fmPathSegment:nth-child(even) {
+        background-color: @thBg3rd;
 
-#fileManagerHeader .fmPathSegment,
-#fileManagerHeader .fmPathSegment:nth-child(even) {
-    &::after {
-        left: 9px;
-    }
-    &:hover {
-        background-color: @actionDark;
-        color: @white40pct;
         &::after {
-            border-left: 10px solid @actionDark;
+            border-left: 10px solid @thBg3rd;
         }
     }
-}
+
+    #fileManagerHeader .fmPathSegment,
+    #fileManagerHeader .fmPathSegment:nth-child(even) {
+        &::after {
+            left: 9px;
+        }
+
+        &:hover {
+            background-color: @actionDark;
+            color: @white40pct;
+
+            &::after {
+                border-left: 10px solid @actionDark;
+            }
+        }
+    }
 
 #fileManagerList {
     background-color: @black30pct;
+
     .fileManagerEntry {
         .fileEntrySubtitle {
             color: @white30pct;
         }
+
         &.selected {
             background-color: @actionDark;
         }
+
         &:hover {
             background: none;
             background-color: @actionMed;
@@ -717,10 +779,12 @@ thead {
 .consoleEntry {
     .consoleName {
         color: @thLite80;
+
         &:hover {
             color: @thLite;
         }
     }
+
     .consoleTimestamp {
         color: @white40pct;
     }
@@ -731,8 +795,10 @@ thead {
         background-color: @thBg2nd;
         text-shadow: 2px 2px 2px @black30pct;
     }
+
     .newDatastoreItem {
         background-color: @black40pct;
+
         .plusIcon {
             color: @thLite80;
         }
@@ -794,7 +860,7 @@ thead {
         > #loginLogo img {
             margin: 0;
             max-width: 88%;
-        }    
+        }
     }
 }
 
