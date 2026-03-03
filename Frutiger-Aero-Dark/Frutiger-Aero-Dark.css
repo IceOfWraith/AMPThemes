@@ -1,0 +1,250 @@
+﻿.tabHeader {
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.tabHeader.active {
+  background-color: #c38300 !important;
+}
+.sideItemList {
+  background-color: transparent;
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+.DisplayMetricHeader {
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+#loginContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 64px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.StoreCard > .mat-icon {
+  text-shadow: none;
+}
+.wizardTab .wizardContents,
+.modalpanel {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  border-radius: 16px;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 64px;
+  background-repeat: no-repeat;
+  border-bottom: none;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+.wizardTab .wizardContents #modaltitle,
+.modalpanel #modaltitle {
+  background-color: transparent;
+}
+.wizardTab .wizardContents h2,
+.modalpanel h2 {
+  background-color: transparent;
+}
+#AMP_Core_PrimaryTask {
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+#sideMenuContainer {
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 96px;
+  background-repeat: no-repeat;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+#sideMenuContainer .menuTitle {
+  color: white;
+}
+#tabTitle,
+.bodyTab {
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+.itemList .item div .desc {
+  color: white;
+}
+#sideMenu a.selected {
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #c38300;
+}
+.analyticsSection,
+.ServerGroupHeader {
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 72px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.StoreCard {
+  background-color: transparent !important;
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 64px;
+  background-repeat: no-repeat;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+body {
+  background-image: url(/Themes/AMPThemes/Frutiger-Aero-Dark/FrutigerDark.webp);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#bgtext {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+body,
+.bodyTab,
+.tabHeaderContainer {
+  background-color: transparent;
+}
+#mainBody {
+  background-color: transparent;
+}
+button,
+input[type=button] {
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  border: 1px solid rgba(230, 230, 230, 0.2);
+  border-bottom: 1px solid rgba(230, 230, 230, 0.2) !important;
+  border-radius: 8px;
+  outline: 1px solid rgba(0, 0, 0, 0.3);
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+  color: white;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 12pt;
+  padding: 4px 12px;
+  background-size: 100%;
+}
+button:hover,
+input[type=button]:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 4px 8px #ffffff80 inset, -2px 4px 8px #ffffff80 inset, 0 9px 9px #000000aa;
+}
+button:active,
+input[type=button]:active {
+  background-color: rgba(230, 230, 230, 0.2);
+  box-shadow: 2px 4px 8px #ffffff80 inset, -2px 4px 8px #ffffff80 inset, 0 9px 9px #000000aa;
+}
+button.slimButton,
+input[type=button].slimButton {
+  padding: 2px 6px;
+}
+.settingsGroup .groupBody .settingContainer .listEditButton {
+  background-color: #c38300;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.3) 100%);
+  background-size: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.settingsGroup .groupBody .settingContainer .listEditButton:hover {
+  background-color: #f6a500;
+  box-shadow: 0 0 8px #ffffff80;
+}
+.settingsGroup .groupBody .settingContainer .listEditButton:active {
+  background-color: #906100;
+  box-shadow: 0 0 8px #00000080;
+}
+.scheduleTriggerHeaderItem .scheduleHeader {
+  color: white;
+  font-size: 14pt;
+  margin-bottom: 8px;
+}
+.iconButton,
+.toolIconButton {
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 32px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.bgRed,
+.bgGreen {
+  border: none;
+}
+#statusActions > div {
+  display: block;
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 64px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  padding: 8px 16px;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+#sideMenuContainer {
+  background-color: transparent;
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+}
+.subMenuWell {
+  background-color: transparent;
+}
+.settingsGroup .groupBody .settingContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 64px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.settingsGroup .groupBody .settingContainer .settingLabel {
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+.settingsGroup .groupBody .settingContainer .settingLabel .settingDescription {
+  color: white;
+}
+.settingsGroup .groupBody .settingContainer .settingLabel input[type=text],
+.settingsGroup .groupBody .settingContainer .settingLabel input[type=password],
+.settingsGroup .groupBody .settingContainer .settingLabel input[type=url],
+.settingsGroup .groupBody .settingContainer .settingLabel input[type=number],
+.settingsGroup .groupBody .settingContainer .settingLabel input[type=email],
+.settingsGroup .groupBody .settingContainer .settingLabel input[type=search],
+.settingsGroup .groupBody .settingContainer .settingLabel select,
+.settingsGroup .groupBody .settingContainer .settingLabel textarea,
+.settingsGroup .groupBody .settingContainer .settingLabel .popupTrigger {
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+  border-radius: 16px;
+  padding-left: 12px;
+}
+.scheduleTriggerDescription {
+  background-color: transparent;
+  border: none;
+}
+.scheduleTriggerInfo {
+  background-color: transparent;
+  border: none;
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 48px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  padding: 8px;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+.scheduleTriggerTask {
+  border-bottom: 1px solid white;
+}

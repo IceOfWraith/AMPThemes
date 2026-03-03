@@ -1,0 +1,76 @@
+﻿@import "../CSS/Queries.less";
+
+@colorPrimary : #111;
+@colorSecondary: #333;
+@colorAccent: #444;
+
+body, .bodyTab {
+    //background-image: url(../Images/HeroBlack_Blur.webp);
+    background-color: #222;
+}
+
+#loginContainer, .sideItemList, #sideMenuContainer, .subMenuWell, #barTop, .tabHeaderContainer {
+    background-color: @colorSecondary;
+}
+
+.sideItemList {
+    box-shadow: inset 8px 8px 8px rgba(0,0,0,0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#mainBody {
+    background: @colorSecondary;
+}
+
+#sideMenu a {
+    font-size: 100%;
+
+    &:active {
+        background-color: @colorPrimary;
+    }
+
+    &.selected {
+        color: #5EA8DE;
+    }
+}
+
+input[type=text], input[type=password], input[type=url], input[type=number], input[type=email], input[type=search], select, textarea, .popupTrigger {
+    background-color: #474747;
+}
+
+input.searchBox {
+    background-color:transparent;
+}
+
+.settingsGroup .groupBody .settingContainer {
+    background-color: @colorSecondary;
+    border-color: @colorAccent;
+}
+
+.wizardTab .wizardContents {
+    background-color: #222;
+    border-bottom: 8px solid @colorAccent;
+
+    h2 {
+        background-color: @colorAccent;
+    }
+}
+
+.scheduleTriggerInfo {
+    border: 1px solid @colorAccent;
+    background-color: @colorSecondary;
+}
+
+.splitViewInfo.splitViewInfo { 
+    background-color: #222;
+}
+
+@media @constrained {
+    #mainBody {
+        background-color: #222;
+    }
+
+    #sideMenuContainer {
+        background-image: linear-gradient(180deg, #222, transparent 10%);
+    }
+}
