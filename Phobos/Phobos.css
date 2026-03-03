@@ -1,0 +1,72 @@
+﻿body,
+.bodyTab,
+.tabHeaderContainer {
+  background-color: transparent;
+}
+body {
+  background-image: url(/Images/Phobos.webp);
+  background-color: #000;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  backdrop-filter: saturate(1.2) hue-rotate(-8deg) brightness(0.45);
+}
+tbody tr:nth-child(2n),
+thead {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#sideMenuContainer {
+  background-color: transparent;
+}
+#loginContainer,
+.sideItemList,
+.subMenuWell {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#mainBody {
+  background: transparent;
+}
+#sideMenu a {
+  font-size: 100%;
+}
+#sideMenu a:active {
+  background-color: #111;
+}
+#sideMenu a.selected {
+  color: orange;
+}
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=number],
+input[type=email],
+input[type=search],
+select,
+textarea,
+.popupTrigger {
+  background-color: #474747;
+}
+input.searchBox {
+  background-color: transparent;
+}
+.settingsGroup .groupBody .settingContainer,
+.tabHeaderContainer .tabHeader,
+.splitViewInfo.splitViewInfo {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: #444;
+}
+.wizardTab .wizardContents {
+  background-color: #222;
+  border-bottom: 8px solid #444;
+}
+.wizardTab .wizardContents h2 {
+  background-color: #444;
+}
+.scheduleTriggerInfo {
+  border: 1px solid #444;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#bgtext {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-top-right-radius: 8px;
+}

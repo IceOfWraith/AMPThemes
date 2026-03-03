@@ -1,0 +1,68 @@
+﻿body,
+.bodyTab {
+  background-color: #222;
+}
+#loginContainer,
+.sideItemList,
+#sideMenuContainer,
+.subMenuWell,
+#barTop,
+.tabHeaderContainer {
+  background-color: #333;
+}
+.sideItemList {
+  box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+#mainBody {
+  background: #333;
+}
+#sideMenu a {
+  font-size: 100%;
+}
+#sideMenu a:active {
+  background-color: #111;
+}
+#sideMenu a.selected {
+  color: #5EA8DE;
+}
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=number],
+input[type=email],
+input[type=search],
+select,
+textarea,
+.popupTrigger {
+  background-color: #474747;
+}
+input.searchBox {
+  background-color: transparent;
+}
+.settingsGroup .groupBody .settingContainer {
+  background-color: #333;
+  border-color: #444;
+}
+.wizardTab .wizardContents {
+  background-color: #222;
+  border-bottom: 8px solid #444;
+}
+.wizardTab .wizardContents h2 {
+  background-color: #444;
+}
+.scheduleTriggerInfo {
+  border: 1px solid #444;
+  background-color: #333;
+}
+.splitViewInfo.splitViewInfo {
+  background-color: #222;
+}
+@media screen and (max-width: 1000px) {
+  #mainBody {
+    background-color: #222;
+  }
+  #sideMenuContainer {
+    background-image: linear-gradient(180deg, #222, transparent 10%);
+  }
+}
