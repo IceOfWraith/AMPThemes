@@ -1,0 +1,9 @@
+{
+  "Name": "Tumeden ASCII",
+  "Version": "1.0",
+  "UpdatedDate": "2026/05/22",
+  "Description": "A very minimal AMP theme with monospace text, square edges, and ASCII-terminal inspired styling.",
+  "URL": "https://tumeden.dev",
+  "Author": "Tumeden",
+  "Tags": [ "Contributor", "Dark", "Monospace" ]
+}
