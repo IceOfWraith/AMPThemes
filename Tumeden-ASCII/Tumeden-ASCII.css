@@ -1,0 +1,894 @@
+/* ================================
+   Tumeden ASCII AMP Theme
+   Very minimal ASCII-terminal dashboard styling
+   ================================ */
+
+:root {
+    --ascii-bg: #040404;
+    --ascii-panel: #0d0d0d;
+    --ascii-panel-alt: #181818;
+    --ascii-border: #767676;
+    --ascii-border-bright: #f0f0f0;
+    --ascii-text: #f2f2f2;
+    --ascii-muted: #b8b8b8;
+    --ascii-dim: #777777;
+}
+
+* {
+    text-shadow: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+body,
+.bodyTab,
+#mainBody,
+#tab_ADSModule_Datastores,
+#tab_FileManagerPlugin_FileManager,
+.datastoreContainer,
+.splitViewBody.splitViewBody {
+    color-scheme: dark;
+    background: var(--ascii-bg) !important;
+    background-color: var(--ascii-bg) !important;
+    background-image: none !important;
+    color: var(--ascii-text);
+    font-family: "Cascadia Mono", "Fira Code", "JetBrains Mono", Consolas, "Courier New", monospace;
+}
+
+#loginContainer,
+#sideMenuContainer,
+.sideItemList,
+.subMenuWell,
+#barTop,
+.tabHeaderContainer,
+.settingsGroup .groupBody .settingContainer,
+.scheduleTriggerInfo,
+.splitViewInfo.splitViewInfo,
+.wizardTab .wizardContents,
+.ServerGroup,
+.InstanceList .ServerEntry,
+#datastoreList,
+#fileManagerList,
+#fileManagerInfo,
+.datastoreItem,
+.newDatastoreItem,
+.fileManagerEntry {
+    background: var(--ascii-panel) !important;
+    background-color: var(--ascii-panel) !important;
+    background-image: none !important;
+    border: 1px solid var(--ascii-border) !important;
+    color: var(--ascii-text) !important;
+    backdrop-filter: none !important;
+}
+
+#mainBody {
+    top: 57px;
+}
+
+#mainBody .bodyTab,
+.bodyTab {
+    margin-left: 0 !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    box-sizing: border-box;
+}
+
+#barTop,
+.menuTitle,
+#userInfo,
+.ServerGroupHeader,
+.ServerGroupActions {
+    background: var(--ascii-panel-alt) !important;
+    border-bottom: 1px solid var(--ascii-border) !important;
+}
+
+#sideMenuContainer,
+.sideItemList,
+.subMenuWell {
+    font-family: inherit;
+    background: var(--ascii-panel) !important;
+    background-color: var(--ascii-panel) !important;
+    background-image: none !important;
+}
+
+#sideMenuContainer {
+    border-color: var(--ascii-border) !important;
+}
+
+#sideMenu .heroImage {
+    background: var(--ascii-bg) !important;
+    border-bottom: 1px solid var(--ascii-border) !important;
+}
+
+.menuTitle {
+    color: var(--ascii-text) !important;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px !important;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.menuTitle::before {
+    content: "[ ";
+    color: var(--ascii-muted);
+}
+
+.menuTitle::after {
+    content: " ]";
+    color: var(--ascii-muted);
+}
+
+#userInfo,
+#userInfo a,
+#userInfo span,
+#userInfo div {
+    color: var(--ascii-text) !important;
+    font-family: inherit;
+}
+
+#sideMenu a {
+    color: var(--ascii-muted) !important;
+    font-family: inherit;
+    border-bottom-color: var(--ascii-dim) !important;
+}
+
+#sideMenu a:hover {
+    color: var(--ascii-text) !important;
+    background: var(--ascii-panel-alt) !important;
+}
+
+#sideMenu a:active,
+#sideMenu a.selected {
+    color: var(--ascii-bg) !important;
+    background: var(--ascii-text) !important;
+}
+
+#sideMenu a.info .subtitle,
+#sideMenu a.info .warn {
+    color: var(--ascii-muted) !important;
+}
+
+#bgtext {
+    color: var(--ascii-muted) !important;
+    border-top-color: var(--ascii-border) !important;
+    font-family: inherit;
+}
+
+#barTop #tabInfo h2 {
+    margin: 0;
+    color: var(--ascii-text);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#barTop #tabInfo h2::before {
+    content: "> ";
+    color: var(--ascii-muted);
+}
+
+#barTop #tabInfo h4 {
+    margin: 0;
+    color: var(--ascii-muted);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#barTop #tabInfo.remoteInfo h2 {
+    margin: 0;
+}
+
+#barTop #topSearchBox {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+    margin: 0 24px;
+}
+
+#barTop #topSearchBox input.searchBox {
+    width: 100%;
+    padding: 9px 36px 9px 12px;
+}
+
+#barTop #topSearchBox .icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--ascii-muted);
+}
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=number],
+input[type=email],
+input[type=search],
+select,
+textarea,
+.popupTrigger {
+    background: var(--ascii-bg) !important;
+    border: 1px solid var(--ascii-border) !important;
+    color: var(--ascii-text) !important;
+    outline: none !important;
+    font-family: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--ascii-muted) !important;
+    opacity: 1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=url]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=search]:focus,
+select:focus,
+textarea:focus,
+.popupTrigger:focus {
+    border-color: var(--ascii-border-bright) !important;
+    background: #000000 !important;
+    outline: 1px solid var(--ascii-border-bright) !important;
+    outline-offset: 1px;
+}
+
+input.searchBox {
+    background-color: transparent;
+}
+
+select option {
+    background: var(--ascii-bg);
+    color: var(--ascii-text);
+}
+
+input[type=checkbox] + span,
+input[type=checkbox][indeterminate] + span,
+input[type=checkbox].redOff + span {
+    position: relative !important;
+    display: inline-block !important;
+    width: 38px !important;
+    min-width: 38px !important;
+    max-width: 38px !important;
+    height: 18px !important;
+    min-height: 18px !important;
+    max-height: 18px !important;
+    margin: 0 4px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    background: var(--ascii-bg) !important;
+    border: 1px solid var(--ascii-border) !important;
+    vertical-align: middle;
+}
+
+input[type=checkbox] + span::before,
+input[type=checkbox][indeterminate] + span::before,
+input[type=checkbox].redOff + span::before {
+    content: "0";
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--ascii-muted);
+    font-family: inherit;
+    font-size: 10px;
+    line-height: 1;
+}
+
+input[type=checkbox] + span::after,
+input[type=checkbox][indeterminate] + span::after,
+input[type=checkbox].redOff + span::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 2px !important;
+    top: 2px !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 12px !important;
+    height: 12px !important;
+    min-width: 12px !important;
+    min-height: 12px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    background: var(--ascii-muted) !important;
+    border: 1px solid var(--ascii-border-bright) !important;
+    box-sizing: border-box !important;
+}
+
+input[type=checkbox]:checked + span,
+input[type=checkbox][indeterminate]:checked + span {
+    background: var(--ascii-panel-alt) !important;
+    border-color: var(--ascii-border-bright) !important;
+}
+
+input[type=checkbox]:checked + span::before,
+input[type=checkbox][indeterminate]:checked + span::before {
+    content: "1";
+    left: auto;
+    right: 4px;
+    color: var(--ascii-text);
+}
+
+input[type=checkbox]:checked + span::after,
+input[type=checkbox][indeterminate]:checked + span::after {
+    left: 22px !important;
+    background: var(--ascii-text) !important;
+}
+
+input[type=checkbox]:focus-visible + span {
+    outline: 1px solid var(--ascii-border-bright) !important;
+    outline-offset: 2px;
+}
+
+button,
+input[type=button],
+input[type=submit],
+.button,
+.InstanceList .ServerEntry .ServerEntryActions button,
+.InstanceList .ServerEntry .ServerEntryActions .iconButton {
+    background: var(--ascii-panel-alt) !important;
+    border: 1px solid var(--ascii-border) !important;
+    color: var(--ascii-text) !important;
+    font-family: inherit;
+    font-weight: 700;
+    min-height: 28px;
+    padding: 4px 8px !important;
+}
+
+button:focus-visible,
+input[type=button]:focus-visible,
+input[type=submit]:focus-visible,
+.button:focus-visible,
+a:focus-visible,
+.popupTrigger:focus-visible {
+    outline: 1px solid var(--ascii-border-bright) !important;
+    outline-offset: 2px;
+}
+
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+.button:hover,
+.InstanceList .ServerEntry .ServerEntryActions button:hover,
+.InstanceList .ServerEntry .ServerEntryActions .iconButton:hover {
+    background: var(--ascii-text) !important;
+    border-color: var(--ascii-border-bright) !important;
+    color: var(--ascii-bg) !important;
+    transform: none !important;
+}
+
+button:active,
+input[type=button]:active,
+input[type=submit]:active,
+.button:active {
+    background: var(--ascii-muted) !important;
+    color: var(--ascii-bg) !important;
+}
+
+.tabHeaderContainer .tabHeader {
+    background: var(--ascii-panel) !important;
+    border: 1px solid var(--ascii-border) !important;
+    color: var(--ascii-text) !important;
+}
+
+.tabHeaderContainer .tabHeader.active {
+    background: var(--ascii-text) !important;
+    border-color: var(--ascii-border-bright) !important;
+    color: var(--ascii-bg) !important;
+}
+
+.tabHeaderContainer .tabHeader::before,
+.tabHeaderContainer .tabHeader::after {
+    content: none !important;
+    display: none !important;
+}
+
+.tabHeaderContainer .tabHeader .mat-icon,
+.tabHeaderContainer .tabHeader .icon,
+.tabHeaderContainer .tabHeader [class*=Icon],
+.tabHeaderContainer .tabHeader [class*=icon],
+.tabHeaderContainer .tabHeader img,
+.tabHeaderContainer .tabHeader svg {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.AppStatus {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--ascii-panel-alt) !important;
+    border: 1px solid var(--ascii-border) !important;
+    color: var(--ascii-text) !important;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.AppStatus::before {
+    content: "[";
+    color: var(--ascii-muted);
+}
+
+.AppStatus::after {
+    content: "]";
+    color: var(--ascii-muted);
+}
+
+.settingsGroup .groupBody .settingContainer,
+.ServerGroup,
+.InstanceList .ServerEntry {
+    transition: none !important;
+}
+
+.settingsGroup .groupBody .settingContainer {
+    overflow: visible !important;
+    transform: none !important;
+}
+
+.settingsGroup,
+.settingsGroup .groupBody {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.settingsGroup:hover .groupBody:hover .settingContainer:hover,
+.ServerGroup:hover,
+.InstanceList .ServerEntry:hover {
+    border-color: var(--ascii-border-bright) !important;
+    transform: none !important;
+}
+
+.ServerGroup {
+    background-image: none !important;
+    overflow: hidden;
+}
+
+.InstanceList .ServerEntry {
+    height: auto !important;
+    background: var(--ascii-panel) !important;
+    background-image: none !important;
+    overflow: hidden;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.InstanceList .ServerEntry::before,
+.InstanceList .ServerEntry::after {
+    content: none !important;
+    display: none !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryImage,
+.InstanceList .ServerEntry .ServerEntryImage.Blur,
+.InstanceList .ServerEntry [class*=ServerEntryImage],
+.InstanceList .ServerEntry [class*=Image],
+.InstanceList .ServerEntry img {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    background: none !important;
+    background-image: none !important;
+    filter: none !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryTop,
+.InstanceList .ServerEntry .ServerEntryInfo,
+.InstanceList .ServerEntry .ServerEntryMetrics,
+.InstanceList .ServerEntry .ServerEntryActions {
+    position: static !important;
+    inset: auto !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    z-index: 1;
+    background: var(--ascii-panel) !important;
+    backdrop-filter: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    float: none !important;
+    transform: none !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryTop,
+.InstanceList .ServerEntry .ServerEntryHeader {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 6px 10px !important;
+    padding: 8px 10px !important;
+    box-sizing: border-box !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryInfo {
+    padding: 0 !important;
+    border-top: 1px solid var(--ascii-border) !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryInfo h2,
+.InstanceList .ServerEntry .ServerEntryInfo h4 {
+    color: var(--ascii-text) !important;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.InstanceList .ServerEntry .ServerEntryInfo h2::before {
+    content: "$ ";
+    color: var(--ascii-muted);
+}
+
+.InstanceList .ServerEntry .ServerEntryInfo p,
+.InstanceList .ServerEntry .ServerEntryInfo .Notice {
+    margin: 6px 10px !important;
+    padding: 8px 10px !important;
+    background: var(--ascii-bg) !important;
+    border: 1px solid var(--ascii-border) !important;
+    color: var(--ascii-muted) !important;
+    line-height: 1.45;
+    box-sizing: border-box !important;
+    max-width: calc(100% - 20px) !important;
+    overflow-wrap: anywhere;
+}
+
+.ServerEntryStatus {
+    background: var(--ascii-panel-alt) !important;
+    border: 1px solid var(--ascii-border) !important;
+    color: var(--ascii-text) !important;
+    padding: 3px 7px !important;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.ServerEntryStatus::before {
+    content: "[";
+    color: var(--ascii-muted);
+}
+
+.ServerEntryStatus::after {
+    content: "]";
+    color: var(--ascii-muted);
+}
+
+.ServerEntryStatus .mat-icon,
+.ServerEntryStatus .icon,
+.InstanceList .ServerEntry .ServerEntryTop .ServerEntryStatus .mat-icon {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    padding: 0 !important;
+    border-top: 1px solid var(--ascii-border) !important;
+    text-align: left;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric {
+    display: block !important;
+    min-width: 0;
+    padding: 8px 10px !important;
+    background: var(--ascii-panel) !important;
+    border-right: 1px solid var(--ascii-border) !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric:last-child {
+    border-right: 0 !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric .mat-icon,
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric .icon,
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric img,
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric svg {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric .MetricText h3 {
+    margin: 0 0 3px 0 !important;
+    color: var(--ascii-muted) !important;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric .MetricText h3::before {
+    content: ":: ";
+    color: var(--ascii-muted);
+}
+
+.InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric .MetricText .MetricValue {
+    color: var(--ascii-text) !important;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.InstanceList .ServerEntry .ServerEntryActions {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin: 0 !important;
+    margin-top: 0 !important;
+    padding: 8px 10px !important;
+    border-top: 1px solid var(--ascii-border) !important;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 6px;
+    min-height: 44px;
+    overflow: visible !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryActions button,
+.InstanceList .ServerEntry .ServerEntryActions .iconButton {
+    position: static !important;
+    inset: auto !important;
+    flex: 0 1 auto !important;
+    width: auto !important;
+    min-width: 34px !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 28px !important;
+    padding: 4px 8px !important;
+    font-size: 0 !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+.InstanceList .ServerEntry .ServerEntryActions button::before,
+.InstanceList .ServerEntry .ServerEntryActions .iconButton::before {
+    content: "[cmd]";
+    font-size: 11px;
+    line-height: 1;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.InstanceList .ServerEntry .ServerEntryActions button[title]::before,
+.InstanceList .ServerEntry .ServerEntryActions .iconButton[title]::before {
+    content: "[" attr(title) "]";
+}
+
+.InstanceList .ServerEntry .ServerEntryActions button[aria-label]::before,
+.InstanceList .ServerEntry .ServerEntryActions .iconButton[aria-label]::before {
+    content: "[" attr(aria-label) "]";
+}
+
+.InstanceList .ServerEntry .ServerEntryActions button .mat-icon,
+.InstanceList .ServerEntry .ServerEntryActions .iconButton .mat-icon,
+.InstanceList .ServerEntry .ServerEntryActions button .icon,
+.InstanceList .ServerEntry .ServerEntryActions .iconButton .icon,
+.InstanceList .ServerEntry .ServerEntryActions button img,
+.InstanceList .ServerEntry .ServerEntryActions .iconButton img,
+.InstanceList .ServerEntry .ServerEntryActions button svg,
+.InstanceList .ServerEntry .ServerEntryActions .iconButton svg {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.ServerGroupName > span {
+    color: var(--ascii-text);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ServerGroupName > span::before {
+    content: "== ";
+    color: var(--ascii-muted);
+}
+
+.ServerGroupName > span::after {
+    content: " ==";
+    color: var(--ascii-muted);
+}
+
+.SystemInfo {
+    color: var(--ascii-muted) !important;
+}
+
+label,
+th,
+td,
+.settingDescription,
+.permNodeDescription,
+.permissionDescriptions div .description,
+.sideItemData,
+.itemList .item,
+.scheduleTriggerDescription,
+.scheduleTriggerTask,
+.wizardTab .wizardContents,
+.modalcontents,
+#modalSubtitle,
+#modalsubtitle {
+    color: var(--ascii-muted) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.settingLabel,
+.itemList .item.selected,
+.fileEntryTitle,
+.datastoreItem h3,
+.datastoreItem h4 {
+    color: var(--ascii-text) !important;
+}
+
+thead,
+tbody tr:nth-child(even),
+.itemList .item:hover,
+.itemList .item.selected,
+.sideItemData .treeContainer,
+.provisionSettingContainer .treeContainer {
+    background: var(--ascii-panel-alt) !important;
+    background-image: none !important;
+}
+
+thead,
+tbody tr,
+.itemList .item,
+.sideItemData hr,
+.provisionSettingContainer hr {
+    border-color: var(--ascii-border) !important;
+}
+
+.datastoreContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.datastoreItem,
+.newDatastoreItem {
+    padding: 10px !important;
+    box-sizing: border-box;
+    text-shadow: none !important;
+}
+
+.datastoreItem h3,
+.datastoreItem h4,
+.newDatastoreItem h3,
+.newDatastoreItem h4 {
+    color: var(--ascii-text) !important;
+    font-family: inherit;
+}
+
+.datastoreItem h3::before,
+.newDatastoreItem h3::before {
+    content: "$ ";
+    color: var(--ascii-muted);
+}
+
+.datastoreItem:hover,
+.newDatastoreItem:hover,
+.fileManagerEntry:hover,
+.fileManagerEntry.selected {
+    background: var(--ascii-panel-alt) !important;
+    background-image: none !important;
+    border-color: var(--ascii-border-bright) !important;
+}
+
+.newDatastoreItem .plusIcon,
+.datastoreItem .mat-icon,
+.datastoreItem .icon,
+.fileManagerEntry .mat-icon,
+.fileManagerEntry .icon,
+#fileManagerInfo .mat-icon {
+    color: var(--ascii-muted) !important;
+}
+
+#fileManagerList,
+#fileManagerInfo {
+    margin-top: 8px;
+}
+
+.fileManagerEntry {
+    border-width: 0 0 1px 0 !important;
+}
+
+.fileEntryTitle {
+    color: var(--ascii-text) !important;
+    font-family: inherit;
+}
+
+.fileManagerEntry .fileEntrySubtitle {
+    color: var(--ascii-muted) !important;
+}
+
+.fmPathSegment {
+    background: transparent !important;
+    color: var(--ascii-muted) !important;
+}
+
+.fmPathSegment + .fmPathSegment::before {
+    content: "/" !important;
+    color: var(--ascii-dim) !important;
+    border: 0 !important;
+}
+
+.fmPathSegment::after {
+    display: none !important;
+}
+
+.bgBlue,
+.bgRed,
+.bgPink,
+.bgPurple,
+.bgGray,
+.bgGreen,
+.bgAmber {
+    background: var(--ascii-panel-alt) !important;
+    border: 1px solid var(--ascii-border) !important;
+    color: var(--ascii-text) !important;
+}
+
+.bgBlue:hover,
+.bgRed:hover,
+.bgPink:hover,
+.bgPurple:hover,
+.bgGray:hover,
+.bgGreen:hover,
+.bgAmber:hover {
+    background: var(--ascii-text) !important;
+    border-color: var(--ascii-border-bright) !important;
+    color: var(--ascii-bg) !important;
+}
+
+hr,
+.separator {
+    border-color: var(--ascii-border) !important;
+}
+
+a {
+    color: var(--ascii-text);
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 760px) {
+    .InstanceList .ServerEntry .ServerEntryMetrics {
+        grid-template-columns: 1fr;
+    }
+
+    .InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric {
+        border-right: 0 !important;
+        border-bottom: 1px solid var(--ascii-border) !important;
+    }
+
+    .InstanceList .ServerEntry .ServerEntryMetrics .ServerEntryMetric:last-child {
+        border-bottom: 0 !important;
+    }
+
+    .InstanceList .ServerEntry .ServerEntryActions button,
+    .InstanceList .ServerEntry .ServerEntryActions .iconButton {
+        flex: 1 1 120px !important;
+        text-align: center;
+    }
+}
