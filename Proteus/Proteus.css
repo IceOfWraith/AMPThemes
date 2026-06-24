@@ -123,14 +123,8 @@ body {
 .InstanceList.ListView .ServerEntry .ServerEntryImage.Main {
   filter: brightness(0.7) !important;
 }
-.ServerGroupContainer .ServerGroup.Online {
-  background-color: #0d151fcc;
-  border-color: #0d151fcc;
-  border-radius: 8px;
-}
 .ServerGroupContainer .ServerGroup.Online .ServerGroupHeader {
   background-color: #04070a;
-  margin: 8px;
   border-radius: 8px;
 }
 .ServerGroupContainer .ServerGroup.Online .ServerGroupHeader .ServerGroupName {
@@ -171,16 +165,9 @@ body {
   background-color: #0a9396;
   border-color: #0a9396;
 }
-.ServerGroupContainer .ServerGroup.Offline,
-.ServerGroupContainer .ServerGroup.Unavailable {
-  background-color: #0d151fcc;
-  border-color: #0d151fcc;
-  border-radius: 8px;
-}
 .ServerGroupContainer .ServerGroup.Offline .ServerGroupHeader,
 .ServerGroupContainer .ServerGroup.Unavailable .ServerGroupHeader {
   background-color: #c81e51;
-  margin: 8px;
   border-radius: 8px;
 }
 .ServerGroupContainer .ServerGroup.Offline .ServerGroupHeader .ServerGroupName,
@@ -191,14 +178,8 @@ body {
 .ServerGroupContainer .ServerGroup.Unavailable .ServerGroupHeader .SystemInfo {
   right: 8px;
 }
-.ServerGroupContainer .ServerGroup.Pending {
-  background-color: #0d151fcc;
-  border-color: #0d151fcc;
-  border-radius: 8px;
-}
 .ServerGroupContainer .ServerGroup.Pending .ServerGroupHeader {
   background-color: #778899;
-  margin: 8px;
   border-radius: 8px;
 }
 .ServerGroupContainer .ServerGroup.Pending .ServerGroupHeader .ServerGroupName {
