@@ -162,8 +162,8 @@ body {
   border-left-color: #c81e51;
 }
 .ServerGroupContainer .ServerGroup.Online .InstanceList .ServerEntry .ServerEntryTop .ServerEntryStatus.bgInfo {
-  background-color: #0a9396;
-  border-color: #0a9396;
+  background-color: #005f73;
+  border-color: #005f73;
 }
 .ServerGroupContainer .ServerGroup.Offline .ServerGroupHeader,
 .ServerGroupContainer .ServerGroup.Unavailable .ServerGroupHeader {
@@ -193,13 +193,14 @@ body {
 }
 button,
 .button {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #005f73;
+  background-color: #005f73;
   color: rgba(255, 255, 255, 0.7);
 }
 button:hover,
 .button:hover {
   background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 button#loginButton,
 .button#loginButton {
@@ -284,25 +285,25 @@ a:visited {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 24px;
 }
-.bgPurple,
-.bgPink,
+.bgBlue,
 .bgInfo {
   background-color: #005f73;
   border: 1px solid #005f73;
 }
-.bgPurple:hover,
-.bgPink:hover,
+.bgBlue:hover,
 .bgInfo:hover {
   background-color: #080e14;
   border: 1px solid #080e14;
 }
 .bgAmber,
-.bgBlue {
+.bgPink,
+.bgPurple {
   background-color: #0a9396;
   border: 1px solid #0a9396;
 }
 .bgAmber:hover,
-.bgBlue:hover {
+.bgPink:hover,
+.bgPurple:hover {
   background-color: #1a2a3a;
   border: 1px solid #1a2a3a;
   color: rgba(255, 255, 255, 0.8);

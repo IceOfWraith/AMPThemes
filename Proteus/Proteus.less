@@ -200,8 +200,8 @@ body {
                     .ServerEntryTop {
                         .ServerEntryStatus {
                             &.bgInfo {
-                                background-color: @actionMed;
-                                border-color: @actionMed;
+                                background-color: @actionDark;
+                                border-color: @actionDark;
                             }
                         }
                     }
@@ -242,11 +242,12 @@ body {
 }
 
 button, .button {
-    border: 1px solid @black30pct;
-    background-color: @black30pct;
+    border: 1px solid @actionDark;
+    background-color: @actionDark;
     color: @white70pct;
     &:hover {
         background-color: @black50pct;
+        border: 1px solid @black50pct;
     }
     &#loginButton {
         background-color: @actionDark;
@@ -341,7 +342,7 @@ a {
     }
 }
 
-.bgPurple, .bgPink, .bgInfo {
+.bgBlue, .bgInfo {
     background-color: @actionDark;
     border: 1px solid @actionDark;
     &:hover {
@@ -350,7 +351,7 @@ a {
     }
 }
 
-.bgAmber, .bgBlue {
+.bgAmber, .bgPink, .bgPurple {
     background-color: @actionMed;
     border: 1px solid @actionMed;
     &:hover {
