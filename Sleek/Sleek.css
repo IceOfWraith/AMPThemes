@@ -263,7 +263,7 @@ body {
     font-size: 13px;
     font-weight: 500;
     color: var(--text-muted) !important;
-    display: inline-flex !important;
+    display: inline-flex;
     align-items: center;
     gap: 8px;
     transition: background 0.15s ease, color 0.15s ease;
@@ -429,7 +429,7 @@ label.checkbox input[type=checkbox].redOff:not(:checked):not([indeterminate]) + 
 .slimButton,
 button.slimButton,
 .button.slimButton {
-    display: inline-flex !important;
+    display: inline-flex;
     align-items: center !important;
     justify-content: center !important;
     gap: 6px !important;
